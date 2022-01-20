@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
+<<<<<<< HEAD
 
+=======
+>>>>>>> matayoshi
 using UnityEngine.UI;
 
 #pragma warning disable 618
