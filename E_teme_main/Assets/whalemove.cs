@@ -5,8 +5,10 @@ public class whalemove : MonoBehaviour
 {
 	[SerializeField] int Speed;
 	// Start is called before the first frame update
+
 	void Start()
 	{
+		
 	}
 	// Update is called once per frame
 	void Update()
@@ -40,10 +42,13 @@ public class whalemove : MonoBehaviour
 		if (Input.GetAxis("Horizontal") > 0)
 		{
 			transform.position -= transform.right * Speed * Time.deltaTime;
+			
 		}
 		if (Input.GetAxis("Horizontal") < 0)
 		{
 			transform.position += transform.right * Speed * Time.deltaTime;
+			
 		}
+
 	}
 }
