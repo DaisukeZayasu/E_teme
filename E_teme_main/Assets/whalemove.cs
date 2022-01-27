@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class whalemove : MonoBehaviour
 {
-	[SerializeField] int speed;
+	[SerializeField] int Speed;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -14,36 +14,36 @@ public class whalemove : MonoBehaviour
 		//キーボードの上下キーでの操作
 		if (Input.GetKey("up"))
 		{
-			transform.position -= transform.forward * speed * Time.deltaTime;
+			transform.position -= transform.forward * Speed * Time.deltaTime;
 		}
 		if (Input.GetKey("down"))
 		{
-			transform.position += transform.forward * speed * Time.deltaTime;
+			transform.position += transform.forward * Speed * Time.deltaTime;
 		}
 		if (Input.GetKey("right"))
 		{
-			transform.position -= transform.right * speed * Time.deltaTime;
+			transform.position -= transform.right * Speed * Time.deltaTime;
 		}
 		if (Input.GetKey("left"))
 		{
-			transform.position += transform.right * speed * Time.deltaTime;
+			transform.position += transform.right * Speed * Time.deltaTime;
 		}
 		//コントローラーでの操作
 		if (Input.GetAxis("Vertical") > 0)
 		{
-			transform.position -= transform.forward * speed * Time.deltaTime;
+			transform.position -= transform.forward * Speed * Time.deltaTime;
 		}
 		if (Input.GetAxis("Vertical") < 0)
 		{
-			transform.position += transform.forward * speed * Time.deltaTime;
+			transform.position += transform.forward * Speed * Time.deltaTime;
 		}
 		if (Input.GetAxis("Horizontal") > 0)
 		{
-			transform.position -= transform.right * speed * Time.deltaTime;
+			transform.position -= transform.right * Speed * Time.deltaTime;
 		}
 		if (Input.GetAxis("Horizontal") < 0)
 		{
-			transform.position += transform.right * speed * Time.deltaTime;
+			transform.position += transform.right * Speed * Time.deltaTime;
 		}
 	}
 }
